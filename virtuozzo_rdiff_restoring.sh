@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ -z "$3" ]
 then
-        echo "Недостаточно переданных параметров: $0 old_id new_id vz_serv [external]";
+        echo "Not enough parameters: $0 old_id new_id vz_serv [external]";
         exit 0
 fi
 sshopts="-q -o StrictHostKeyChecking=no -o CheckHostIP=no -o UserKnownHostsFile=/dev/null"
